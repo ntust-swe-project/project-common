@@ -18,6 +18,7 @@
 | `docs/AI_LOG_TEMPLATE.md` | AI 使用紀錄範本。各組複製到自己 repo 的 `docs/ai-log/` 填寫 |
 | `.gitmessage` | commit 範本，跑 `git config commit.template .gitmessage` 後生效 |
 | `.gitignore` | Godot 與 IDE 的忽略規則 |
+| `project.godot` | Godot 專案骨架（版本、renderer、解析度）。各組複製到自己 repo 根目錄，再加 `config/name` 與 `run/main_scene` |
 
 ## 規則重點
 
@@ -32,10 +33,11 @@
 `VISION.md` 中標為 **【提案，待三組確認】** 的項目尚未經三組同意，確認前各組以其為工作假設：
 
 - 共用骨架的界線（只共用 `project.godot` 與 `.gitignore`）
+- `project.godot` 的解析度基準 **1920x1080** 與 stretch `aspect=keep`（第 10 節只要求「固定並寫入」，未給數值）
+- `project.godot` 固定 `rendering_device/driver.windows=vulkan`（第 10 節只寫了 Forward+，但 Forward+ 是 rendering method、不決定圖形後端，兩者是不同設定鍵）
 - 第 11 節第 6、7 條（repo 分工、AI 紀錄欄位）
 
 ## 還沒做的
 
-- 共用的 `project.godot`（版本、renderer、解析度）尚未建立
 - 第 9 節的客戶聯絡方式尚未寫入
 - 客戶訪談的 Q&A 是否三組共享，尚未決定
