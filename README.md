@@ -15,6 +15,7 @@
 | --- | --- |
 | `docs/VISION.md` | **起始文件**。三組唯一的共同輸入，定案後各組獨立做需求分析 |
 | `docs/COMMIT_CONVENTION.md` | commit message 規則，三個 repo 共用 |
+| `docs/AI_LOG_TEMPLATE.md` | AI 使用紀錄範本。各組複製到自己 repo 的 `docs/ai-log/` 填寫 |
 | `.gitmessage` | commit 範本，跑 `git config commit.template .gitmessage` 後生效 |
 | `.gitignore` | Godot 與 IDE 的忽略規則 |
 
